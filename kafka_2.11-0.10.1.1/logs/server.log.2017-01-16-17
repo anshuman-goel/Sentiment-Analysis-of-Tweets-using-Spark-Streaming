@@ -1,0 +1,413 @@
+[2017-01-16 17:15:35,787] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	default.replication.factor = 1
+	delete.topic.enable = false
+	fetch.purgatory.purge.interval.requests = 1000
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.protocol.version = 0.10.1-IV2
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listeners = null
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 0.10.1-IV2
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 3
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	unclean.leader.election.enable = true
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2017-01-16 17:15:35,832] INFO starting (kafka.server.KafkaServer)
+[2017-01-16 17:15:35,843] INFO [ThrottledRequestReaper-Fetch], Starting  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-01-16 17:15:35,845] INFO [ThrottledRequestReaper-Produce], Starting  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-01-16 17:15:35,855] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2017-01-16 17:15:42,660] FATAL Fatal error during KafkaServer startup. Prepare to shutdown (kafka.server.KafkaServer)
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server within timeout: 6000
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1232)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:156)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:130)
+	at kafka.utils.ZkUtils$.createZkClientAndConnection(ZkUtils.scala:76)
+	at kafka.utils.ZkUtils$.apply(ZkUtils.scala:58)
+	at kafka.server.KafkaServer.initZk(KafkaServer.scala:327)
+	at kafka.server.KafkaServer.startup(KafkaServer.scala:200)
+	at kafka.server.KafkaServerStartable.startup(KafkaServerStartable.scala:39)
+	at kafka.Kafka$.main(Kafka.scala:67)
+	at kafka.Kafka.main(Kafka.scala)
+[2017-01-16 17:15:48,480] INFO shutting down (kafka.server.KafkaServer)
+[2017-01-16 17:15:48,490] INFO shut down completed (kafka.server.KafkaServer)
+[2017-01-16 17:15:48,492] FATAL Fatal error during KafkaServerStartable startup. Prepare to shutdown (kafka.server.KafkaServerStartable)
+org.I0Itec.zkclient.exception.ZkTimeoutException: Unable to connect to zookeeper server within timeout: 6000
+	at org.I0Itec.zkclient.ZkClient.connect(ZkClient.java:1232)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:156)
+	at org.I0Itec.zkclient.ZkClient.<init>(ZkClient.java:130)
+	at kafka.utils.ZkUtils$.createZkClientAndConnection(ZkUtils.scala:76)
+	at kafka.utils.ZkUtils$.apply(ZkUtils.scala:58)
+	at kafka.server.KafkaServer.initZk(KafkaServer.scala:327)
+	at kafka.server.KafkaServer.startup(KafkaServer.scala:200)
+	at kafka.server.KafkaServerStartable.startup(KafkaServerStartable.scala:39)
+	at kafka.Kafka$.main(Kafka.scala:67)
+	at kafka.Kafka.main(Kafka.scala)
+[2017-01-16 17:15:48,496] INFO shutting down (kafka.server.KafkaServer)
+[2017-01-16 17:21:50,566] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	default.replication.factor = 1
+	delete.topic.enable = false
+	fetch.purgatory.purge.interval.requests = 1000
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.protocol.version = 0.10.1-IV2
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listeners = null
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 0.10.1-IV2
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 3
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	unclean.leader.election.enable = true
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2017-01-16 17:21:50,643] INFO starting (kafka.server.KafkaServer)
+[2017-01-16 17:21:50,683] INFO [ThrottledRequestReaper-Fetch], Starting  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-01-16 17:21:50,684] INFO [ThrottledRequestReaper-Produce], Starting  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-01-16 17:21:50,694] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2017-01-16 17:21:54,943] INFO Cluster ID = pdTqoqtITfa_fmzn4InbyA (kafka.server.KafkaServer)
+[2017-01-16 17:21:54,988] INFO Log directory '/tmp/kafka-logs' not found, creating it. (kafka.log.LogManager)
+[2017-01-16 17:21:55,026] INFO Loading logs. (kafka.log.LogManager)
+[2017-01-16 17:21:55,036] INFO Logs loading complete in 10 ms. (kafka.log.LogManager)
+[2017-01-16 17:21:55,105] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2017-01-16 17:21:55,108] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2017-01-16 17:21:55,112] WARN No meta.properties file under dir /tmp/kafka-logs/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+[2017-01-16 17:21:55,168] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2017-01-16 17:21:55,171] INFO [Socket Server on Broker 0], Started 1 acceptor threads (kafka.network.SocketServer)
+[2017-01-16 17:21:55,203] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-01-16 17:21:55,204] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-01-16 17:21:55,264] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:21:55,272] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:21:55,272] INFO 0 successfully elected as leader (kafka.server.ZookeeperLeaderElector)
+[2017-01-16 17:21:55,351] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-01-16 17:21:55,362] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-01-16 17:21:55,365] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-01-16 17:21:55,391] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.GroupCoordinator)
+[2017-01-16 17:21:55,393] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.GroupCoordinator)
+[2017-01-16 17:21:55,394] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 2 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-01-16 17:21:55,432] INFO Will not load MX4J, mx4j-tools.jar is not in the classpath (kafka.utils.Mx4jLoader$)
+[2017-01-16 17:21:55,484] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:21:55,491] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:21:55,493] INFO Registered broker 0 at path /brokers/ids/0 with addresses: PLAINTEXT -> EndPoint(anshuman-Aspire-E5-571,9092,PLAINTEXT) (kafka.utils.ZkUtils)
+[2017-01-16 17:21:55,494] WARN No meta.properties file under dir /tmp/kafka-logs/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+[2017-01-16 17:21:55,504] INFO New leader is 0 (kafka.server.ZookeeperLeaderElector$LeaderChangeListener)
+[2017-01-16 17:21:55,554] INFO [Kafka Server 0], started (kafka.server.KafkaServer)
+[2017-01-16 17:22:56,766] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions twitterstream-0 (kafka.server.ReplicaFetcherManager)
+[2017-01-16 17:22:56,824] INFO Completed load of log twitterstream-0 with 1 log segments and log end offset 0 in 43 ms (kafka.log.Log)
+[2017-01-16 17:22:56,828] INFO Created log for partition [twitterstream,0] in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 0.10.1-IV2, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> true, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2017-01-16 17:22:56,830] INFO Partition [twitterstream,0] on broker 0: No checkpointed highwatermark is found for partition [twitterstream,0] (kafka.cluster.Partition)
+[2017-01-16 17:28:58,961] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:28:58,977] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:28:59,010] INFO 0 successfully elected as leader (kafka.server.ZookeeperLeaderElector)
+[2017-01-16 17:29:01,560] INFO re-registering broker info in ZK for broker 0 (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:29:01,561] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:29:01,575] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:29:01,575] INFO Registered broker 0 at path /brokers/ids/0 with addresses: PLAINTEXT -> EndPoint(anshuman-Aspire-E5-571,9092,PLAINTEXT) (kafka.utils.ZkUtils)
+[2017-01-16 17:29:01,576] INFO done re-registering broker (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:29:01,576] INFO Subscribing to /brokers/topics path to watch for new topics (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:29:01,633] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions twitterstream-0 (kafka.server.ReplicaFetcherManager)
+[2017-01-16 17:29:01,649] INFO New leader is 0 (kafka.server.ZookeeperLeaderElector$LeaderChangeListener)
+[2017-01-16 17:31:55,392] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-01-16 17:41:55,392] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-01-16 17:42:41,556] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:42:41,573] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:42:41,573] INFO 0 successfully elected as leader (kafka.server.ZookeeperLeaderElector)
+[2017-01-16 17:42:42,807] INFO re-registering broker info in ZK for broker 0 (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:42:42,808] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:42:42,819] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:42:42,823] INFO Registered broker 0 at path /brokers/ids/0 with addresses: PLAINTEXT -> EndPoint(anshuman-Aspire-E5-571,9092,PLAINTEXT) (kafka.utils.ZkUtils)
+[2017-01-16 17:42:42,823] INFO done re-registering broker (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:42:42,823] INFO Subscribing to /brokers/topics path to watch for new topics (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:42:42,875] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions twitterstream-0 (kafka.server.ReplicaFetcherManager)
+[2017-01-16 17:42:42,893] INFO New leader is 0 (kafka.server.ZookeeperLeaderElector$LeaderChangeListener)
+[2017-01-16 17:44:44,466] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:44:45,799] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:44:48,317] INFO 0 successfully elected as leader (kafka.server.ZookeeperLeaderElector)
+[2017-01-16 17:44:48,383] INFO re-registering broker info in ZK for broker 0 (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:44:48,384] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:44:48,397] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:44:48,397] INFO Registered broker 0 at path /brokers/ids/0 with addresses: PLAINTEXT -> EndPoint(anshuman-Aspire-E5-571,9092,PLAINTEXT) (kafka.utils.ZkUtils)
+[2017-01-16 17:44:48,397] INFO done re-registering broker (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:44:48,397] INFO Subscribing to /brokers/topics path to watch for new topics (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:44:53,441] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions twitterstream-0 (kafka.server.ReplicaFetcherManager)
+[2017-01-16 17:44:53,461] INFO New leader is 0 (kafka.server.ZookeeperLeaderElector$LeaderChangeListener)
+[2017-01-16 17:49:52,296] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:49:53,593] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:49:53,594] INFO 0 successfully elected as leader (kafka.server.ZookeeperLeaderElector)
+[2017-01-16 17:49:53,680] INFO re-registering broker info in ZK for broker 0 (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:49:53,680] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:49:58,756] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:49:58,757] INFO Registered broker 0 at path /brokers/ids/0 with addresses: PLAINTEXT -> EndPoint(anshuman-Aspire-E5-571,9092,PLAINTEXT) (kafka.utils.ZkUtils)
+[2017-01-16 17:49:58,757] INFO done re-registering broker (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:49:58,757] INFO Subscribing to /brokers/topics path to watch for new topics (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:50:00,105] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions twitterstream-0 (kafka.server.ReplicaFetcherManager)
+[2017-01-16 17:50:00,120] INFO New leader is 0 (kafka.server.ZookeeperLeaderElector$LeaderChangeListener)
+[2017-01-16 17:51:55,392] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-01-16 17:52:25,542] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:52:26,741] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:52:26,741] INFO 0 successfully elected as leader (kafka.server.ZookeeperLeaderElector)
+[2017-01-16 17:53:53,176] ERROR Conditional update of path /controller_epoch with data 6 and expected version 4 failed due to org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /controller_epoch (kafka.utils.ZkUtils)
+[2017-01-16 17:53:58,276] INFO re-registering broker info in ZK for broker 0 (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:53:58,276] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:53:59,562] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:53:59,562] INFO Registered broker 0 at path /brokers/ids/0 with addresses: PLAINTEXT -> EndPoint(anshuman-Aspire-E5-571,9092,PLAINTEXT) (kafka.utils.ZkUtils)
+[2017-01-16 17:53:59,562] INFO done re-registering broker (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:53:59,562] INFO Subscribing to /brokers/topics path to watch for new topics (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:54:00,864] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions twitterstream-0 (kafka.server.ReplicaFetcherManager)
+[2017-01-16 17:54:00,880] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:54:00,891] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:54:02,163] INFO 0 successfully elected as leader (kafka.server.ZookeeperLeaderElector)
+[2017-01-16 17:54:04,861] INFO re-registering broker info in ZK for broker 0 (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:54:04,872] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:54:04,898] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2017-01-16 17:54:04,898] INFO Registered broker 0 at path /brokers/ids/0 with addresses: PLAINTEXT -> EndPoint(anshuman-Aspire-E5-571,9092,PLAINTEXT) (kafka.utils.ZkUtils)
+[2017-01-16 17:54:04,898] INFO done re-registering broker (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:54:04,898] INFO Subscribing to /brokers/topics path to watch for new topics (kafka.server.KafkaHealthcheck$SessionExpireListener)
+[2017-01-16 17:54:04,904] INFO New leader is 0 (kafka.server.ZookeeperLeaderElector$LeaderChangeListener)
+[2017-01-16 17:54:04,912] INFO New leader is 0 (kafka.server.ZookeeperLeaderElector$LeaderChangeListener)

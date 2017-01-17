@@ -1,0 +1,5 @@
+bin/zookeeper-server-start.sh config/zookeeper.properties
+bin/kafka-server-start.sh config/server.properties
+python twitter_to_kafka.py
+bin/kafka-console-consumer.sh --zookeeper localhost:1281 --topic twitterstream --from-beginning
+$SPARK_HOME/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.6.1 twitterStream.py
