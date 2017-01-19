@@ -16,8 +16,6 @@ def main():
     pwords = load_wordlist("positive.txt")
     nwords = load_wordlist("negative.txt")
 
-    print(pwords)
-    
     counts = stream(ssc, pwords, nwords, 100)
     make_plot(counts)
 
@@ -61,6 +59,11 @@ def word_count(word,pwords,nwords):
         return
 
 
+def addingCount(newVal, tweet_value):
+    if tweet_value is None:
+        tweet_value=0
+    return sum(newVal,tweet_value)
+
 def stream(ssc, pwords, nwords, duration):
     kstream = KafkaUtils.createDirectStream(ssc, topics = ['twitterstream'], kafkaParams = {"metadata.broker.list": 'localhost:9092'})
     tweets = kstream.map(lambda x: x[1].encode("ascii","ignore"))
@@ -73,8 +76,9 @@ def stream(ssc, pwords, nwords, duration):
     tweets=tweets.flatMap(lambda x:re.findall(r"[\w']+",x)).map(lambda x:x.lower())
     tweets=tweets.map(lambda x: word_count(x,pwords,nwords)).filter(lambda x: False if x is None else True)
     tweets=tweets.reduceByKey(lambda x,y:x+y)
-    tweets.pprint()
-
+    #tweets.pprint()
+    total_count=tweets.updateStateByKey(addingCount)
+    total_count.pprint()
     # Let the counts variable hold the word counts for all time steps
     # You will need to use the foreachRDD function.
     # For our implementation, counts looked like:
